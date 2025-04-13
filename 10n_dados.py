@@ -1,9 +1,19 @@
-limite = int(input('Digite quantos números serão inseridos: '))
+def inverter(dado):
+    lista_i.append(dado)
+    lista_i.sort(reverse=True)
 
-lista = []
+def reverter(dado):
+    invertido = int(str(dado)[::-1])
+    lista_r.append(invertido)
+
+limite = int(input('Digite quantos números serão inseridos: '))
+lista_i = []
+lista_r = []
 
 for i in range(limite):
-    dado = int(input('Digite o número que deseja inserir: '))
-    lista.append(dado)
+    dado = int(input('Digite o número que entrará na lista: '))
+    inverter(dado)
+    reverter(dado)
 
-print(lista.sort(reverse=True)) #resultado = None
+print(f'Lista em ordem decrescente: {lista_i}')
+print(f'Lista com números invertidos: {lista_r}')
