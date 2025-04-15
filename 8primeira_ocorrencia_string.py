@@ -9,3 +9,6 @@ for letra in texto: #loop que verifica cada letra no texto
         break #quebra o loop
     else: #se a letra não for igual a letra do input, executa:
         index = index + 1 #adiciona 1 no index
+
+if letra != valor: #se a letra não estiver na palavra
+    print('-1') #printa -1
